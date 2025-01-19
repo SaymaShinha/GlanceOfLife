@@ -1,0 +1,5 @@
+flask
+bootstrap 5.3.3
+sass 1.83.4
+fontawesome-free 6.7.2
+autoprefixer 10.4.20

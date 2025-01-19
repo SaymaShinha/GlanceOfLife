@@ -4,11 +4,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GlaceOfLiving</title>
+  <title>SaymaShinha</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/fontawesome.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <h1>Hi There! How are you ?</h1>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="{{url_for('static', filename='img/s3-logo.png')}}" style="width: 50px; height: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Faq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portifolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <button type="button" class="rounded-pill btn-rounded">+8801981870564<span><i
+              class="fas fa-phone-alt"></i></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- START THE INTRO SECTION -->
+  <!--START THE CONTENT FOR THE INTRO-->
+  <section id="home" class="intro-section">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <div class="col-md-6 intros">
+          <h1 class="display-2">
+            <span class="display-2--intro">Hey!, I'm Sayma</span>
+            <span class="display-2--description lh-lg">This is multi-purpose responsive layout created with bootstrap
+              v5.</span>
+          </h1>
+          <button type="button" class="rounded-pill btn-rounded">Get in Touch<span><i
+                class="fas fa-arrow-right"></i></span></button>
+        </div>
+        <!--START THE CONTENT FOR THE VIDEO-->
+        <div class="col-md-6 intros test-end">
+          <div class="video-box">
+            <img src="{{ url_for('static',filename='img/arts/coding.png') }}" alt="video illustration" class="img-fluk">
+            <a href="" class="position-absolute top-50 start-50 translate-middle">
+              <span>
+                <i class="fas fa-play-circle"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script rel="script" src="{{ url_for('static',filename='js/bootstrap.bundle.js') }}"></script>
 </body>
 
 </html>

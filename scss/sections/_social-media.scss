@@ -1,0 +1,20 @@
+.social-media {
+  padding: 0 0 5rem 0;
+
+  &__logo-box {
+    max-width: 10%;
+    height: 3rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+
+    img {
+      height: 10%;
+
+      &:hover {
+        filter: grayscale(120);
+      }
+    }
+  }
+}

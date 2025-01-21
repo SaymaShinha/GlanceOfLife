@@ -1,7 +1,8 @@
 // theme color
-$purple-dark: #9926f0;
-$purple-light: #bb6ef5;
-$pink: #d122e3;
+$purple-dark: #05e3cd;
+$purple-light: #6ef5f5;
+$pink: #22d6e3;
+$footer: #151414;
 
 // white and gray-colors
 $white: #fff;
@@ -19,6 +20,8 @@ $black: #000;
 $primary: $purple-dark;
 $secondary: $pink;
 
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
 $accordion-icon-color: $primary;
 $accordion-icon-active-color: $secondary;
 

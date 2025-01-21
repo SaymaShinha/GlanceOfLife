@@ -1,4 +1,4 @@
-@use "custom";
+@use "custom" as *;
 
 //import components
 @use "components/animations";
@@ -9,7 +9,7 @@
 // import thesecyions
 @use "sections/navbar";
 @use "sections/intro-section";
-@use "sections/_social-media";
+@use "sections/social-media";
 @use "sections/projects";
 @use "sections/testimonials";
 @use "sections/faq";

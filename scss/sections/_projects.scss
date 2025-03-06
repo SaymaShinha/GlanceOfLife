@@ -1,36 +1,60 @@
 @use "../custom" as *;
+@use "../components/mixins" as *;
 
-.projects {
+.project {
+  padding: 4rem 0;
+
+  button {
+    text-transform: capitalize;
+  }
+}
+
+.project-box {
   position: relative;
-  padding: 1rem 0;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 0.5rem solid $purple-light;
 
-  &__content {
-    padding: 1rem;
-    margin-top: 0;
+  img {
+    width: 100%;
+    height: 90%;
+  }
 
-    p {
-      font-size: 0.8rem;
+  .project-info {
+    background-color: rgba($primary, 0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
 
-      @include media-breakpoint-up(lg) {
-        font-size: 1rem;
-      }
-    }
+    .caption {
+      text-align: center;
+      color: white;
 
-    @include media-breakpoint-up(lg) {
-      margin-top: 5 rem;
-    }
+      @include absoluteCenter;
 
-    .icon {
-      font-size: 1.5rem;
-      color: $primary;
-
-      @include media-breakpoint-up(lg) {
-        font-size: 2.5rem;
+      h4 {
+        text-transform: uppercase;
+        display: block;
       }
     }
   }
 
-  &__pic {
-    max-width: 100%;
+  &:hover {
+    img {
+      transform: scale(1.5);
+      @include transitionProperty;
+    }
+    .project-info {
+      opacity: 1;
+      visibility: visible;
+
+      @include transitionProperty;
+    }
   }
 }
